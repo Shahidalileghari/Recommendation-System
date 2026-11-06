@@ -126,7 +126,3 @@ tests/           unit tests
 ## Important limitations
 
 This repository is a strong learning and baseline foundation, not a ready-made large-scale production recommender. It does not include a real user dataset, online experimentation, distributed retrieval, a feature store, or production-grade personalization/privacy controls. Item-item similarity is computed with a sparse interaction matrix and is intended for small/medium experiments. See `docs/ROADMAP.md`.
-
-## License
-
-MIT. See `LICENSE`.
