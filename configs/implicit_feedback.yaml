@@ -1,0 +1,17 @@
+experiment:
+  name: implicit-feedback-baselines
+  seed: 42
+data:
+  interactions: data/interactions.csv
+  split: global_temporal
+  train_ratio: 0.8
+  validation_ratio: 0.1
+candidate_generation:
+  method: item_item
+  max_candidates: 500
+ranking:
+  method: pointwise_logistic_regression
+  features: [user_activity_log, item_popularity_log, already_seen]
+evaluation:
+  k_values: [5, 10, 20]
+  metrics: [precision, recall, map, ndcg, mrr, catalog_coverage]
